@@ -16,7 +16,7 @@
     "dev": "react-scripts start",
     "start": "PUBLIC_URL=/proxy/5000 BROWSER=none react-scripts build && serve build",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "(react-scripts test --runInBand --watchAll=false --outputFile=test_results.log --json); (echo \"\" >> test_results.log); (date >> test_results.log)",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
